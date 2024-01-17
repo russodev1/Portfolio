@@ -1,1 +1,0 @@
-Projeto de portifólio individual.
