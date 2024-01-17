@@ -1,6 +1,6 @@
 <h1 align="center"> Veja meu portifólio! 📚 </h1>
 
-<img  src="./github/perfil.png" align="center">
+<img  src="./assets/perfil.png" align="center">
 
 <p align="center"> 👾 Este é um projeto experimental, avalie meus demais projetos e contate-me!</p>
 

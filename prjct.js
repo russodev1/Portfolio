@@ -25,10 +25,10 @@ function toggleMode() {
     const alt = document.querySelector('#profile img')
     
     if (html.classList.contains('light'))
-    img.setAttribute('alt', 'example')
+    img.setAttribute('alt', 'Foto de Gabriel no modo claro')
 
     else {
-        img.setAttribute('alt', 'text')
+        img.setAttribute('alt', 'Foto de Gabriel no modo escuro')
     }
 
 }
