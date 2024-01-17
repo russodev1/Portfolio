@@ -1,0 +1,211 @@
+
+/* Importação de fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+/* Atributos universais do HTML em questão */
+
+* {
+    
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    box-sizing: border-box;
+    
+}
+
+:root {
+
+    --text-color: white;
+    --bg-mobile: url(./assets/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.1);
+    --stroke-color-hover: rgba(255, 255, 255, 1);
+    --bg-icons: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./assets/moon-stars.svg);
+    --rocket-seat-color: rgb(68, 212, 248);
+}
+
+.light {
+    --rocket-seat-color: rgb(247, 46, 46);
+    --text-color: black;
+    --bg-mobile: url(./assets/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.50);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --stroke-color-hover: black;
+    --bg-icons: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./assets/sun.svg)
+}
+
+
+body {
+    background-image: var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--text-color);
+}
+
+/* Parte do perfil e nome */
+
+#container {
+    
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 360px;
+    height: 192px;
+    margin: auto;
+    margin-top: 56px;
+
+}
+
+#profile {
+
+    padding: 24px;
+    text-align: center;
+
+}
+
+#profile img {
+
+    width: 112px;
+    height: 112px;
+    border: solid 2px rgba(255, 29, 200, 0.2);
+    border-radius: 50%;
+
+}
+
+#profile p {
+
+    margin-top: 8px;
+
+}
+
+/* Botão SWITCH */
+
+#switch {
+    margin: 4px auto;
+    width: 64px;
+    /* padding: 4px; */
+    /* border: 1px solid red; */
+    position: relative;
+
+}
+
+
+#switch button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform:translateY(-50%);
+    border: 0;
+    padding: 8px;
+    gap: 8px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: white var(--switch-bg-url) no-repeat center;
+}
+
+#switch button:hover {
+    height: 34px;
+    width: 34px;
+}
+
+#switch span {
+    
+    display: block;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    width: 64px;
+    background: var(--surface-color);
+    height: 24px;
+    border-radius: 9999px;
+    border: 1px solid var(--stroke-color);
+}
+
+.light #switch button {
+
+    right: 0;
+    left: initial;
+}
+
+/* Parte dos Links */ 
+
+#links ul {
+
+    gap: 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+#links ul li a {
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: solid 1px var(--stroke-color);
+    border-radius: 8px;
+    padding: 16px 24px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition:  0.3s;
+    font-weight: 500;
+}
+
+#links ul li a:hover {
+
+    border: solid 1.3px var(--stroke-color-hover);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Social Links Icons */
+
+#social-links {
+    
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    font-size: 24px;
+    
+
+}
+
+
+#social-links a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    transition: background 0.3s;
+    border-radius: 50%;
+    padding: 16px;
+}
+    
+#social-links a:hover {
+
+    background-color: var(--bg-icons);
+
+
+}
+
+/* certificação pela rocketseat */
+
+footer {
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    padding: 24px 0;
+}
+
+footer a {
+    color: var(--rocket-seat-color);
+    text-decoration: solid;
+
+}
