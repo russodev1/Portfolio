@@ -9,15 +9,20 @@
 <body>
     
     <div id="container">
+
+        <div id="switch" onclick="toggleMode()">
+            <button ></button>
+            <span></span>
+        </div>
+
         <div id="profile">
             <img src="./assets/foto2.jpg" alt="Foto de Gabriel">
             <p>@GabrielDev</p>
         </div>
         
-        <div id="switch" onclick="toggleMode()">
-            <button ></button>
-            <span></span>
-        </div>
+        <footer>
+            Aluno certificado pela <a href="https://app.rocketseat.com.br/certificates/14f92fea-5067-46b8-8689-9c8e00c14d50" target="_blank">Rocketseat</a>
+        </footer>
         
         <div id="links">
             <ul>
@@ -31,6 +36,7 @@
         </div>
         
         <div id="social-links">
+            
             <!-- <a> 
                 <ion-icon name="logo-youtube"></ion-icon>
             </a> -->
@@ -45,14 +51,11 @@
             </a>
         </div>
         
-        <footer>
-            Aluno certificado pela <a href="https://app.rocketseat.com.br/home" target="_blank">Rocketseat</a>
-        </footer>
     </div>
-
-    <!-- Script de importação dos ícones do https://ionic.io/ionicons -->
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        
+        <!-- Script de importação dos ícones do https://ionic.io/ionicons -->
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./prjct.js"></script>
 </body>
