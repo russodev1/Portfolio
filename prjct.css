@@ -32,7 +32,7 @@
 }
 
 #switch button:hover {
-    outline: solid 8px var(--highlight-color)
+    outline: 8px solid /*rgba(255, 255, 255, 0.4)*/ var(--highlight-color);
 }
 
 #switch span {
@@ -74,6 +74,7 @@
     --bg-icons: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
     --rocket-seat-color: rgb(68, 212, 248);
+    --highlight-color: rgba(55, 155, 55, 0.7);
     /* --highlight-color: rgba(255, 255, 255, 0.5);; */
 }
 
@@ -86,6 +87,7 @@
     --surface-color: rgba(0, 0, 0, 0.05);
     --stroke-color-hover: black;
     --bg-icons: rgba(0, 0, 0, 0.1);
+    --highlight-color: rgba(255, 255, 255, 0.3);
     --switch-bg-url: url(./assets/sun.svg)
 }
 
@@ -167,7 +169,7 @@ body {
 #links ul li a:hover {
 
     border: solid 1.3px var(--stroke-color-hover);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--highlight-color);
 }
 
 /* Social Links Icons */
